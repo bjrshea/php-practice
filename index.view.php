@@ -7,11 +7,18 @@
   </head>
   <body>
     <ul>
-      <?php
-        foreach($names as $name) {
-          echo "<li>$name</li>";
-        }
-      ?>
+      <li>
+        <strong>Name: </strong> <?= $task['title']; ?>
+      </li>
+      <li>
+        <strong>Due Date: </strong> <?= $task['due']; ?>
+      </li>
+      <li>
+        <strong>Assigned To: </strong> <?= $task['assigned_to']; ?>
+      </li>
+      <li>
+        <strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+      </li>
     </ul>
   </body>
 </html>

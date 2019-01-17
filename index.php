@@ -1,6 +1,11 @@
 <?php
 
-$names = ['Brendan', 'Amy', 'John', 'Kiera', 'Rachael'];
+$task = [
+  'title' => 'Stretch',
+  'due' => 'today',
+  'assigned_to' => 'Brendan',
+  'completed' => false
+];
 
 require 'index.view.php';
 
