@@ -2,8 +2,6 @@
 
 require 'functions.php';
 
-$animals = ['dog', 'cat'];
-
-dd('hello world');
+die(var_dump(ageChecker(18)));
 
 require 'index.view.php';
