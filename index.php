@@ -1,12 +1,9 @@
 <?php
 
-$task = [
-  'title' => 'Stretch',
-  'due' => 'today',
-  'assigned_to' => 'Brendan',
-  'completed' => false
-];
+require 'functions.php';
+
+$animals = ['dog', 'cat'];
+
+dd('hello world');
 
 require 'index.view.php';
-
-?>
