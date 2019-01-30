@@ -1,7 +1,18 @@
 <?php
 
-require 'functions.php';
+class Task {
 
-die(var_dump(ageChecker(18)));
+  protected $description;
+
+  protected $completed = false;
+
+  public function __construct($description) {
+    $this->description = $description;
+  }
+}
+
+$task = new Task('Go to the store');
+
+var_dump($task);
 
 require 'index.view.php';
